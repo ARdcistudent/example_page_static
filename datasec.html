@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Travalala | Die Taparia mit Eventcharakter</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="" alt="logo"></a>
+
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Startseite</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./menue.html">Speise- & Getränkekarte</a></li>
+                <li><a href="./gutscheine.html">Gutscheine</a></li>
+                <li><a href="./reservations.html">Reservierungen</a></li>
+                <li><a href="./contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Datenschutz</h1>
+    </main>
+    
+    <footer>
+        <div class="footer_left">
+            <a href="./impressum.html">Impressum</a>
+            <a href="./datasec.html">Datenschutz</a>
+            <a href="./contact.html">Kontaktformular</a>
+        </div>
+        <div class="footer_right">
+            <a href="http://www.instagram.de" target="_blank" rel="noopener noreferrer"><img src="" alt="insta_logo" class="sm_logos"></a>
+            <a href="http://www.facebook.de" target="_blank" rel="noopener noreferrer"><img src="" alt="fb_logo" class="sm_logos"></a>
+        </div>
+        <div class="footer_downside_center">
+            <h4>Meine Partner</h4>
+            <a href="http://www.partnerA.de" target="_blank" rel="noopener noreferrer"><img src="" alt="partnerA"></a>
+            <a href="http://www.partnerB.de" target="_blank" rel="noopener noreferrer"><img src="" alt="partnerB"></a>
+            <a href="http://www.partnerC.de" target="_blank" rel="noopener noreferrer"><img src="" alt="partnerC"></a>
+            <a href="http://www.partnerD.de" target="_blank" rel="noopener noreferrer"><img src="" alt="partnerD"></a>
+        </div>
+    </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+
+        burger.addEventListener("click", () => {
+
+            nav.classList.toggle("active");
+            burger.classList.toggle("active");
+
+        });
+
+    });
+</script>
+</body>
+</html>
