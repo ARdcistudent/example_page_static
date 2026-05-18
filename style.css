@@ -77,7 +77,11 @@ header {
 
 /* Logo */
 header img {
-    width: 120px;
+    width: 210px;
+    height: auto;
+}
+footer img {
+    width: 20rem;
     height: auto;
 }
 
@@ -172,6 +176,7 @@ iframe {
    CTA BUTTON
 ========================= */
 .cta_btn {
+    cursor: pointer;
     margin-top: 40px;
     background-color: var(--berry-red);
     border: none;
@@ -186,6 +191,7 @@ iframe {
 
 .cta_btn:hover {
     background-color: var(--berry-hover);
+    color: var(--white);
     transform: translateY(-3px);
 }
 
