@@ -717,6 +717,10 @@ footer a:hover {
 
     line-height: 1.2;
 }
+.event_content span {
+    margin-right: 10px;
+    text-decoration: solid underline;
+}
 
 /* ARTIST */
 
