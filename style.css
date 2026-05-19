@@ -1060,3 +1060,268 @@ footer a:hover {
         height: 400px;
     }
 }
+
+/* =========================
+   VOUCHER HERO
+========================= */
+
+.voucher_hero {
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.voucher_hero p {
+    max-width: 800px;
+
+    margin: 0 auto 20px auto;
+
+    font-size: 1.1rem;
+}
+
+/* =========================
+   VOUCHERS GRID
+========================= */
+
+.vouchers {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 35px;
+
+    margin-bottom: 80px;
+}
+
+/* =========================
+   VOUCHER CARD
+========================= */
+
+.voucher_card {
+
+    background-color: var(--bg-light);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+
+    transition: 0.35s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.voucher_card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+/* IMAGE */
+
+.voucher_img_wrapper {
+
+    overflow: hidden;
+
+    background-color: #fff;
+}
+
+.voucher_img_wrapper img {
+
+    width: 100%;
+
+    display: block;
+
+    transition: 0.4s ease;
+}
+
+.voucher_card:hover img {
+
+    transform: scale(1.04);
+}
+
+/* CONTENT */
+
+.voucher_content {
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    flex-grow: 1;
+}
+
+.voucher_content h3 {
+
+    font-size: 1.8rem;
+
+    color: var(--berry-red);
+}
+
+.voucher_content p {
+
+    opacity: 0.8;
+}
+
+/* BUTTON */
+
+.voucher_btn {
+
+    margin-top: auto;
+
+    background-color: var(--berry-red);
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    padding: 16px 22px;
+
+    border-radius: 18px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.voucher_btn:hover {
+
+    background-color: var(--berry-hover);
+
+    transform: translateY(-2px);
+}
+
+/* =========================
+   AFTER PAYMENT SECTION
+========================= */
+
+.after_payment {
+
+    background: linear-gradient(
+        135deg,
+        rgba(123, 41, 71, 0.08),
+        rgba(255,255,255,0.4)
+    );
+
+    border: 2px dashed rgba(123, 41, 71, 0.35);
+
+    padding: 50px;
+
+    border-radius: 35px;
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* BLOCKQUOTE */
+
+.after_payment blockquote {
+
+    background-color: rgba(123, 41, 71, 0.12);
+
+    border-left: 6px solid var(--berry-red);
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    margin-bottom: 35px;
+
+    font-style: italic;
+
+    font-weight: 700;
+}
+
+/* HEADLINE */
+
+.after_payment h2 {
+
+    margin-bottom: 25px;
+}
+
+/* TEXT */
+
+.after_payment p {
+
+    margin-bottom: 20px;
+
+    max-width: 900px;
+}
+
+.after_payment a {
+
+    color: var(--berry-red);
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.after_payment a:hover {
+
+    opacity: 0.75;
+}
+
+/* RELOAD BUTTON */
+
+.reload_btn {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    background-color: var(--berry-red);
+
+    color: white !important;
+
+    padding: 18px 28px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.reload_btn:hover {
+
+    background-color: var(--berry-hover);
+
+    transform: translateY(-3px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .after_payment {
+
+        padding: 30px 22px;
+    }
+
+    .voucher_content h3 {
+
+        font-size: 1.5rem;
+    }
+
+    .reload_btn {
+
+        width: 100%;
+
+        text-align: center;
+    }
+}
