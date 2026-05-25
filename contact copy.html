@@ -51,44 +51,102 @@
                     als Musiker bei uns bewerben?
                 </p>
 
-                
+                <p>
+                    Gerne nehmen wir auch Reservierungen direkt telefonisch entgegen.
+                </p>
+
                 <div class="contact_highlight">
-                    <p>
-                        Rufen Sie uns gerne an!
-                    </p>
                     
                     <a href="tel:+491234567891" class="contact_phone contact_badge">
                         0123 - 456 789 1
                     </a>
 
                 </div>
-                
-                <div class="contact_highlight">
-                    <p>
-                        Sie schreiben lieber? - Dann schreiben Sie uns gerne eine E-Mail!
-                    </p>
-                    
-                    <a href="mailto:info@travalala.de" class="contact_phone contact_badge">
-                        info@travalala.de
-                    </a>
 
-                </div>
-                
-                <div class="contact_highlight">
-                    <p>
-                        Sie sind Musiker und wollen bei uns Spielen? - Immer gerne her mit euren Bewerbungen per E-Mail!
-                    </p>
-                    
-                    <a href="mailto:booking@travalala.de" class="contact_phone contact_badge">
-                        booking@travalala.de
-                    </a>
-
-                </div>
+                <p class="contact_note">
+                    Alternativ können Sie bequem unser Kontaktformular nutzen.
+                </p>
 
             </div>
 
         </section>
         
+        <section class="contact_section">
+            <h2>Kontaktformular</h2>
+
+            <form class="contact_form">
+
+                <!-- Anliegen -->
+                <div class="form_group">
+                    <label for="topic">Worum geht es?</label>
+
+                    <select id="topic" name="topic" required>
+                        <option value="">Bitte auswählen</option>
+                        <option value="reservierung">Tischreservierung</option>
+                        <option value="musiker">Auftrittsanfrage für Musiker</option>
+                        <option value="allgemein">Allgemeine Fragen</option>
+                    </select>
+                </div>
+
+                <!-- Name -->
+                <div class="form_group">
+                    <label for="name">Name</label>
+
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Ihr Name"
+                        required
+                    >
+                </div>
+
+                <!-- Email -->
+                <div class="form_group">
+                    <label for="email">E-Mail</label>
+
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="ihre@email.de"
+                        required
+                    >
+                </div>
+
+                <!-- Telefonnummer -->
+                <div class="form_group">
+                    <label for="phone">Telefonnummer</label>
+
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="+49..."
+                    >
+                </div>
+
+                <!-- Nachricht -->
+                <div class="form_group">
+                    <label for="message">Nachricht</label>
+
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="8"
+                        placeholder="Ihre Nachricht..."
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- Button -->
+                <button type="submit" class="cta_btn">
+                    Nachricht senden
+                </button>
+
+            </form>
+
+        </section>
 
     </main>
 
