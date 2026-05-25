@@ -47,7 +47,7 @@ h4,
 h5,
 h6,
 .headlines {
-    font-family: "Paytone One", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     color: var(--text-color);
     letter-spacing: 1px;
 }
@@ -60,7 +60,9 @@ a,
 li,
 button,
 .text {
-    font-family: "Comfortaa", sans-serif;
+    font-family: Verdana, Arial, sans-serif;
+    /* font-family: "Times New Roman", Times, serif; */
+    line-height: 1.6;
 }
 
 /* =========================
@@ -99,12 +101,12 @@ header {
 
 /* Logo */
 header img {
-    width: 210px;
+    width: 420px;
     height: auto;
 }
 
 footer img {
-    width: 20rem;
+    width: 430px;
     height: auto;
 }
 
