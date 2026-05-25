@@ -1523,3 +1523,33 @@ footer a:hover {
         font-size: 1.25rem;
     }
 }
+
+
+/* Index-Hero */
+.hero {
+    height: 80vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("https://cdn.pixabay.com/photo/2025/08/20/10/58/ai-generated-9785410_1280.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.hero_overlay h1{
+    color: var(--white);
+}
+.hero_overlay p{
+    font-size: xx-large;
+}
