@@ -102,9 +102,16 @@ header img {
     height: auto;
 }
 
-footer img {
+/* footer img {
     width: 430px;
     height: auto;
+} */
+
+footer > img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 /* =========================
