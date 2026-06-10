@@ -215,7 +215,7 @@ h2 {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-.introduction h4 {
+.introduction h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
@@ -637,7 +637,7 @@ footer a:hover {
         font-size: 1.1rem;
     }
 
-    .introduction h4 {
+    .introduction h2 {
         font-size: 1.4rem;
     }
 
