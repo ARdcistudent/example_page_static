@@ -647,7 +647,7 @@ footer a:hover {
     }
 
     header img {
-        width: 300px;
+        width: 220px;
     }
 
     .burger span {
@@ -1602,4 +1602,157 @@ footer a:hover {
 }
 .hero_overlay p{
     font-size: xx-large;
+}
+
+
+/* =========================
+   JOBS PAGE
+========================= */
+
+.jobs_hero {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(123, 41, 71, 0.12),
+            rgba(255,255,255,0.45)
+        );
+
+    padding: 60px;
+    border-radius: 35px;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.jobs_hero h1 {
+    margin-bottom: 15px;
+}
+
+.jobs_hero p {
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    font-size: 1.15rem;
+}
+
+.jobs_grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 30px;
+
+    margin-bottom: 60px;
+}
+
+.job_card {
+    background-color: var(--bg-light);
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    transition: 0.3s ease;
+}
+
+.job_card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+}
+
+.job_card h3 {
+    color: var(--berry-red);
+
+    margin-bottom: 15px;
+
+    font-size: 1.7rem;
+}
+
+.job_type {
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.job_time {
+    opacity: 0.8;
+}
+
+.jobs_about {
+    background-color: var(--bg-light);
+
+    padding: 50px;
+
+    border-radius: 35px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.jobs_about h2 {
+    margin-bottom: 25px;
+}
+
+.jobs_about p {
+    margin-bottom: 20px;
+}
+
+.jobs_quote {
+    background-color: rgba(123,41,71,0.1);
+
+    border-left: 6px solid var(--berry-red);
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    margin: 35px 0;
+
+    font-style: italic;
+
+    font-weight: 700;
+}
+
+.jobs_cta {
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+.jobs_cta .reload_btn {
+    margin-bottom: 20px;
+}
+
+.jobs_cta p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* =========================
+   JOBS MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .jobs_hero,
+    .jobs_about {
+        padding: 30px 22px;
+    }
+
+    .job_card {
+        padding: 25px;
+    }
+
+    .job_card h3 {
+        font-size: 1.4rem;
+    }
+
+    .jobs_hero h1 {
+        font-size: 2.2rem;
+    }
 }
