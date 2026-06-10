@@ -456,7 +456,7 @@ footer a:hover {
 .burger span {
     width: 32px;
     height: 4px;
-    background-color: white;
+    background-color: var(--berry-red);
     border-radius: 20px;
     transition: 0.3s ease;
 }
@@ -533,7 +533,7 @@ footer a:hover {
 
         width: 100%;
 
-        background-color: var(--berry-red);
+        background-color: var(--bg-light);
 
         max-height: 0;
         overflow: hidden;
