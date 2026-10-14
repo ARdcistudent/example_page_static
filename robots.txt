@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ardcistudent.github.io/example_page_static/sitemap.xml
+Sitemap: https://www.travalala.de/sitemap.xml

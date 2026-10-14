@@ -3,56 +3,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://ardcistudent.github.io/example_page_static/</loc>
+        <loc>https://www.travalala.de/</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://ardcistudent.github.io/example_page_static/jobs.html</loc>
+        <loc>https://www.travalala.de/jobs.html</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://ardcistudent.github.io/example_page_static/build.html</loc>
+        <loc>https://www.travalala.de/build.html</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://ardcistudent.github.io/example_page_static/events.html</loc>
+        <loc>https://www.travalala.de/events.html</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://ardcistudent.github.io/example_page_static/menu.html</loc>
+        <loc>https://www.travalala.de/menu.html</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://ardcistudent.github.io/example_page_static/contact.html</loc>
+        <loc>https://www.travalala.de/contact.html</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://ardcistudent.github.io/example_page_static/impressum.html</loc>
+        <loc>https://www.travalala.de/impressum.html</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
 
     <url>
-        <loc>https://ardcistudent.github.io/example_page_static/datasec.html</loc>
+        <loc>https://www.travalala.de/datasec.html</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
