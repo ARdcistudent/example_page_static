@@ -1581,7 +1581,8 @@ footer a:hover {
 
     background:
         linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("https://cdn.pixabay.com/photo/2025/08/20/10/58/ai-generated-9785410_1280.jpg");
+        /* url("https://cdn.pixabay.com/photo/2025/08/20/10/58/ai-generated-9785410_1280.jpg"); */
+        url("./assets/expressions/travalala2.jpeg");
 
     background-size: cover;
     background-position: center;
