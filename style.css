@@ -1582,7 +1582,8 @@ footer a:hover {
     background:
         linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
         /* url("https://cdn.pixabay.com/photo/2025/08/20/10/58/ai-generated-9785410_1280.jpg"); */
-        url("./assets/expressions/travalala2.jpeg");
+        /* url("./assets/expressions/travalala2.jpeg"); */
+        url("./assets/expressions/travalala_header_back.jpeg");
 
     background-size: cover;
     background-position: center;
@@ -1603,6 +1604,8 @@ footer a:hover {
 }
 .hero_overlay p{
     font-size: xx-large;
+
+    text-shadow: 2px 2px 4px darkred;
 }
 
 
