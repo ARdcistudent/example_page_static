@@ -148,6 +148,8 @@ footer > img {
     object-fit: contain;
 }
 
+
+
 /* =========================
    NAVIGATION
 ========================= */
@@ -347,6 +349,10 @@ footer a:hover {
 .footer_downside_center h4 {
     color: var(--white);
     margin-bottom: 10px;
+}
+
+.footer_downside_center img {
+    max-width: 120px;
 }
 
 /* Social Media Logos */
@@ -615,9 +621,9 @@ footer a:hover {
     }
 
     /* PARTNER LOGOS */
-    .footer_downside_center img {
+    /* .footer_downside_center img {
         max-width: 120px;
-    }
+    } */
 }
 
 /* =========================
