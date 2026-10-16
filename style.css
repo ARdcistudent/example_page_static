@@ -1614,6 +1614,11 @@ footer a:hover {
     text-shadow: 2px 2px 4px darkred;
 }
 
+.hero_overlay .opentime{
+    font-weight: 900;
+    font-style: italic;
+}
+
 
 /* =========================
    JOBS PAGE
