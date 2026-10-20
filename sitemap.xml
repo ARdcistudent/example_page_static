@@ -4,7 +4,7 @@
 
     <url>
         <loc>https://www.travalala.de/</loc>
-        <lastmod>2026-06-10</lastmod>
+        <lastmod>2026-10-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -18,7 +18,7 @@
 
     <url>
         <loc>https://www.travalala.de/build.html</loc>
-        <lastmod>2026-06-10</lastmod>
+        <lastmod>2026-10-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -32,28 +32,28 @@
 
     <url>
         <loc>https://www.travalala.de/menu.html</loc>
-        <lastmod>2026-06-10</lastmod>
+        <lastmod>2026-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://www.travalala.de/contact.html</loc>
-        <lastmod>2026-06-10</lastmod>
+        <lastmod>2026-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://www.travalala.de/impressum.html</loc>
-        <lastmod>2026-06-10</lastmod>
+        <lastmod>2026-10-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
 
     <url>
         <loc>https://www.travalala.de/datasec.html</loc>
-        <lastmod>2026-06-10</lastmod>
+        <lastmod>2026-10-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
