@@ -1,41 +1,141 @@
-import { projectId, dataset, apiVersion } from "./sanity";
-import { toHTML } from "https://esm.sh/@portabletext/to-html";
 
-// Sanity Date holen
-async function loadHomepage() {
-    const query = encodeURIComponent(`
-        *[_type == "homepage"][0]{
-        // Bezeichnungen aus Sanity einfügen / nutzen!!!
+import { projectId, dataset, apiVersion } from "./sanity.js";
+
+
+// ============================================
+// ALLGEMEINE FUNKTION ZUM ABRUFEN VON SANITY-DATEN
+// ============================================
+
+export async function fetchSanityData(query) {
+
+    const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${encodeURIComponent(query)}`;
+
+    try {
+
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            throw new Error(`Sanity API Fehler: ${response.status}`);
         }
-        `);
 
-        const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`;
+        const data = await response.json();
 
-        const res = await fetch(url);
-        const data = await res.json();
+        return data.result;
 
-        const page = data.result;
+    } catch (error) {
 
-        // in HTML einsetzen
+        console.error("Fehler beim Laden der Sanity-Daten:", error);
+
+        return null;
+
+    }
 
 }
 
-// Beispiele! Nach erschaffung der Logik löschen!
-// addressElement.innerHTML = data.address || `
-//         <p class="address">
-//           Die Kiste<br>
-//           Musterstraße 12<br>
-//           23552 Lübeck
-//         </p>
-// `;
+
+// ============================================
+// HOMEPAGE-DATEN LADEN
+// ============================================
+
+export async function loadHomepageData() {
+
+    const query = `
+        *[_type == "homepage"][0] {
+            heroHeadline,
+            heroWelcome,
+            openingHours,
+            introHeadline,
+            introText1,
+            introImage1 {
+                asset -> {
+                    url
+                }
+            },
+            introText2,
+            introImage2 {
+                asset -> {
+                    url
+                }
+            },
+            musicHeadline,
+            musicText,
+            closingText
+        }
+    `;
+
+    return await fetchSanityData(query);
+
+}
 
 
-// addressElement.innerHTML = data.address?.trim()
-//   ? data.address
-//   : `
-//     <p class="address">
-//       Die Kiste<br>
-//       Musterstraße 12<br>
-//       23552 Lübeck
-//     </p>
-//   `;
+// ============================================
+// KONTAKTSEITEN-DATEN LADEN
+// ============================================
+
+export async function loadContactData() {
+
+    const query = `
+        *[_type == "contact"][0] {
+            contactItems[] {
+                description,
+                buttonText,
+                link
+            }
+        }
+    `;
+
+    return await fetchSanityData(query);
+
+}
+
+
+// ============================================
+// STELLENANGEBOTE LADEN
+// ============================================
+
+export async function loadJobsData() {
+
+    const query = `
+        *[_type == "jobs"][0] {
+            jobs[] {
+                title,
+                jobType,
+                workingTime
+            }
+        }
+    `;
+
+    return await fetchSanityData(query);
+
+}
+
+// ============================================
+// EVENTS LADEN
+// ============================================
+
+export async function loadEventsData() {
+
+    const query = `
+        *[_type == "events"][0] {
+            eventItems[] {
+                title,
+                date,
+                startTime,
+                endTime,
+                subtitleLabel,
+                subtitle,
+                description,
+                poster {
+                    asset -> {
+                        url
+                    }
+                },
+                buttonText,
+                buttonLink
+            }
+        }
+    `;
+
+    return await fetchSanityData(query);
+
+}

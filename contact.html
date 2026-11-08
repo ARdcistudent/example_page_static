@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -14,9 +15,11 @@
 
     <title>Kontakt | Travalala</title>
 </head>
+
 <body>
 
     <header>
+
         <a href="./index.html">
             <img src="./assets/logo_travalala.png" alt="logo">
         </a>
@@ -33,14 +36,16 @@
                 <li><a href="./build.html">Events</a></li>
                 <li><a href="./menue.html">Speise- & Getränkekarte</a></li>
                 <li><a href="./build.html">Gutscheine</a></li>
-                <!-- <li><a href="./build.html" target="_blank">Reservierungen</a></li> -->
                 <li><a href="./reservations.html">Reservierungen</a></li>
                 <li><a href="./contact.html">Kontakt</a></li>
             </ul>
         </nav>
+
     </header>
 
+
     <main>
+
         <section class="contact_intro">
 
             <div class="contact_intro_content">
@@ -52,66 +57,16 @@
                     als Musiker bei uns bewerben?
                 </p>
 
-                
-                <div class="contact_highlight">
-                    <p>
-                        Rufen Sie uns gerne an!
-                    </p>
-                    
-                    <a href="tel:+4945120944063" class="contact_phone contact_badge">
-                        0451 - 209 440 63
-                    </a>
+                <!-- Kontaktmöglichkeiten werden dynamisch aus Sanity geladen -->
 
-                </div>
-                
-                <div class="contact_highlight">
-                    <p>
-                        Sie schreiben lieber? - Dann schreiben Sie uns gerne eine E-Mail!
-                    </p>
-                    
-                    <a href="mailto:info@travalala.de" class="contact_phone contact_badge">
-                        info@travalala.de
-                    </a>
-                </div>
-                <div class="contact_highlight">
-                    <p>
-                        Du bist Musiker und würdest gerne auf unserer Bühne spielen? - Dann kannst du uns direkt hier erreichen!
-                    </p>
-                    
-                    <a href="mailto:music-booking@travalala.de" class="contact_phone contact_badge">
-                        music-booking@travalala.de
-                    </a>
-                </div>
-
-                <div class="contact_highlight">
-                    <p>
-                        Starkes Team gesucht!!!
-                    </p>
-                    
-                    <a href="./jobs.html" class="contact_phone contact_badge">
-                        Unsere aktuellen Stellenauschreibungen
-                    </a>
-
-                </div>
-                
-                <!-- BOOKING MAIL NOCH NICHT AKTIV! -->
-                <!-- <div class="contact_highlight"> 
-                    <p>
-                        Sie sind Musiker und wollen bei uns Spielen? - Immer gerne her mit euren Bewerbungen per E-Mail!
-                    </p>
-                    
-                    <a href="mailto:booking@travalala.de" class="contact_phone contact_badge">
-                        booking@travalala.de
-                    </a>
-
-                </div> -->
+                <div id="contact_items"></div>
 
             </div>
 
         </section>
-        
 
     </main>
+
 
     <footer>
 
@@ -120,20 +75,42 @@
             <a href="./datasec.html">Datenschutz</a>
             <a href="./contact.html">Kontaktformular</a>
         </div>
+
         <div class="footer_right">
-            <a href="https://www.instagram.com/travalala.luebeck/" target="_blank" rel="noopener noreferrer"><img src="./assets/sm_logos/Instagram_logo_2016.svg.webp" alt="insta_logo" class="sm_logos"><p>Find us on Instagram</p></a>
-            <a href="https://www.facebook.com/sziggys.bar/posts/juhuuu-ihr-liebengerne-unterst%C3%BCtzt-uns-bei-unserem-mamut-projekt-aus-dem-alten-f/1688533315728957/" target="_blank" rel="noopener noreferrer"><img src="./assets/sm_logos/Facebook_Logo_2023.png" alt="fb_logo" class="sm_logos"><p>Find us on Facebook</p></a>
+
+            <a href="https://www.instagram.com/travalala.luebeck/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/sm_logos/Instagram_logo_2016.svg.webp" alt="insta_logo" class="sm_logos">
+                <p>Find us on Instagram</p>
+            </a>
+
+            <a href="https://www.facebook.com/sziggys.bar/posts/juhuuu-ihr-liebengerne-unterst%C3%BCtzt-uns-bei-unserem-mamut-projekt-aus-dem-alten-f/1688533315728957/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/sm_logos/Facebook_Logo_2023.png" alt="fb_logo" class="sm_logos">
+                <p>Find us on Facebook</p>
+            </a>
+
         </div>
 
+
         <div class="footer_downside_center">
+
             <h4>Unsere Partner</h4>
-            <a href="http://www.sziggys.de/" target="_blank" rel="noopener noreferrer"><img src="./assets/partner_logos/sziggys_logo.jpg" alt="sZiggys Bar"></a>
-            <a href="https://www.kiste-luebeck.de/" target="_blank" rel="noopener noreferrer"><img src="./assets/partner_logos/logo_die_kiste.png" alt="Die Kiste Lübeck"></a>
-            <!-- <a href="http://www.partnerC.de" target="_blank" rel="noopener noreferrer"><img src="" alt="partnerC"></a> -->
-            <!-- <a href="http://www.partnerD.de" target="_blank" rel="noopener noreferrer"><img src="" alt="partnerD"></a> -->
-            </div>
+
+            <a href="http://www.sziggys.de/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/partner_logos/sziggys_logo.jpg" alt="sZiggys Bar">
+            </a>
+
+            <a href="https://www.kiste-luebeck.de/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/partner_logos/logo_die_kiste.png" alt="Die Kiste Lübeck">
+            </a>
+
+        </div>
+
         <img src="./assets/logo_travalala-mit-Text.png" alt="logo mit text">
+
     </footer>
+
+
+    <!-- Burger-Menü -->
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -150,6 +127,11 @@
 
         });
     </script>
+
+
+    <!-- Sanity-Kontaktdaten -->
+
+    <script type="module" src="./sanity_js/contact.js"></script>
 
 </body>
 </html>

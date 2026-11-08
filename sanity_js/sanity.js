@@ -1,3 +1,3 @@
-export const projectId = ""; // Sanity Project ID (noch erstellen!)
-export const dataset = "production"; // Ist das korrekt?
-export const apiVersion = ""; // In Sanity auffindbar? & Wichtig?
+export const projectId = "r8togkf4"; 
+export const dataset = "production"; 
+export const apiVersion = "2026-01-01"; 
